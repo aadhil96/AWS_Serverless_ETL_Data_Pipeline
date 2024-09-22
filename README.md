@@ -48,8 +48,3 @@ This project implements a serverless ETL (Extract, Transform, Load) data pipelin
 - AWS Lambda: For data preprocessing and database insertion.
 - AWS RDS (MySQL): For relational database storage of processed data.
 - AWS Step Functions: To manage and orchestrate the entire workflow.
-  
-#### Future Improvements
-- Add more sophisticated error handling in Step Functions to retry steps in case of failure.
-- Optimize Lambda functions for large datasets (e.g., through batch processing).
-- Implement security best practices such as encryption and IAM roles with least privilege.
