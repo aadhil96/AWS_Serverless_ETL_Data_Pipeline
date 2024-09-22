@@ -39,9 +39,9 @@ This project implements a serverless ETL (Extract, Transform, Load) data pipelin
 
 
 #### Running the Pipeline
-- 1. Upload raw data to the Landing-Data S3 bucket.
-- 2. The Lambda functions will automatically trigger, preprocess the data, insert it into MySQL, and archive the processed data as Parquet in S3.
-- 3. AWS Step Functions will manage and coordinate the steps.
+1. Upload raw data to the Landing-Data S3 bucket.
+2. The Lambda functions will automatically trigger, preprocess the data, insert it into MySQL, and archive the processed data as Parquet in S3.
+3. AWS Step Functions will manage and coordinate the steps.
 
 #### AWS Services Used
 - AWS S3: For storing raw and processed data.
