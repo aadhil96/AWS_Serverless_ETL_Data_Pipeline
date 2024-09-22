@@ -34,3 +34,22 @@ This project implements a serverless ETL (Extract, Transform, Load) data pipelin
 #### 7. Step Functions:
 - The entire workflow is orchestrated using **AWS Step Functions**, ensuring the steps are executed sequentially and correctly.
 - This includes triggering the Lambda functions and coordinating the data flow.
+
+
+
+
+#### Running the Pipeline
+- 1. Upload raw data to the Landing-Data S3 bucket.
+- 2. The Lambda functions will automatically trigger, preprocess the data, insert it into MySQL, and archive the processed data as Parquet in S3.
+- 3. AWS Step Functions will manage and coordinate the steps.
+
+#### AWS Services Used
+- AWS S3: For storing raw and processed data.
+- AWS Lambda: For data preprocessing and database insertion.
+- AWS RDS (MySQL): For relational database storage of processed data.
+- AWS Step Functions: To manage and orchestrate the entire workflow.
+  
+#### Future Improvements
+- Add more sophisticated error handling in Step Functions to retry steps in case of failure.
+- Optimize Lambda functions for large datasets (e.g., through batch processing).
+- Implement security best practices such as encryption and IAM roles with least privilege.
