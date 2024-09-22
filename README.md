@@ -4,6 +4,8 @@ This project implements a serverless ETL (Extract, Transform, Load) data pipelin
 
 ## Architecture Overview
 
+![Pipeline Diagram](https://github.com/aadhil96/AWS_Serverless_ETL_Data_Pipeline/blob/f2916463dd5babc482ea29cd63c56fae7ec3d29b/aws_data.drawio.png)
+
 ### Components:
 
 #### 1. Landing-Data (S3 Data Source):
